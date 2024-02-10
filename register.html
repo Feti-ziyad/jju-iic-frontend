@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- Boxicons CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="register.css">
+  <title>Registration form | JJU Innovation Incubation Center</title>
+</head>
+<body>
+  <div class="navigation">
+    <nav>
+      <div class="navbar">
+        <i class='bx bx-menu'></i>
+        <div class="logo"><a href="#">JJU IIC</a></div>
+        <div class="nav-links">
+          <div class="sidebar-logo">
+            <span class="logo-name">JJU IIC</span>
+            <i class='bx bx-x' ></i>
+          </div>
+          <ul class="links">
+            <li><a href="index.html">HOME</a></li>
+            <li>
+              <a href="#">ABOUT US</a>
+              <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+              <ul class="htmlCss-sub-menu sub-menu">
+                <li><a href="about.html">Who we are</a></li>
+                <li><a href="#">Bord Members</a></li>
+                <li class="more">
+                  <span><a href="#">Focus area</a>
+                  <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                </span>
+                  <ul class="more-sub-menu sub-menu">
+                    <li><a href="#">Agri Tech</a></li>
+                    <li><a href="#">Health Tech</a></li>
+                    <li><a href="#">Engineering</a></li>
+                    <li><a href="#">Social Entrepreneurship</a></li>
+                    <li><a href="#">Collaborator</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="index.html">SERVICES</a></li>
+            <li><a href="index.html">CONTACT US</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container">
+    <form action="submit.html" method="GET" class="form-container">
+      <h1>Please fill out the form!</h1>
+      <div class="container-row">
+        <label class="required">1. Name of the Applicant (First name and Last Name)</label>
+        <div class="input-field-1-container">
+          <div class="input-icon">
+            <img src="images/user.png" width="30px" height="30px">
+          </div>
+          <div class="input-field">
+            <input name="name" type="text" id="full_name" placeholder="Full Name" required />
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label  class="required">2. Sex</label>
+        <div class="input-field-2-container">
+          <div class="input-icon">
+            <img src="images/sex.png" width="35px" height="35px">
+          </div>
+          <div class="input-field">
+           <select name="sex" id="sex" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+           </select>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label  class="required">3. Age of the Applicant</label>
+        <div class="input-field-3-container">
+          <div class="input-icon">
+            <img src="images/age.png" width="35px" height="35px">
+          </div>
+          <div class="input-field">
+            <input name="age" type="number" id="age" placeholder="Age"  min="14" required />
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label>4. Company Name (If there is an existing Company)</label>
+        <div class="input-field-4-container">
+          <div class="input-icon">
+            <img src="images/company.png" width="35px" height="35px">
+          </div>
+          <div class="input-field">
+            <input name="company_name" type="text" id="company_name" placeholder="Company Name"/>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label>5. List of Co-founders Name</label>
+        <div class="input-field-5-container">
+          <div class="input-icon">
+            <img src="images/cofounders.png" width="35px" height="35px">
+          </div>
+          <div class="input-field">
+            <input name="cofounder_name" type="text" id="cofounders_name" placeholder="Co-founders Name"/>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label>6. Company Address (Region/Zone/City/Woreda)</label>
+        <div class="input-field-6-container">
+          <div class="input-icon">
+            <img src="images/address.png" width="35px" height="35px">
+          </div>
+          <div class="input-field">
+            <input name="company_address" type="text" id="company_address" placeholder="Company Address"/>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label  class="required">7. Phone Number (+251....)</label>
+        <div class="input-field-7-container">
+          <div class="input-icon">
+            <img src="images/phone.png" width="30px" height="30px">
+          </div>
+          <div class="input-field">
+            <input name="phone" type="text" id="phone_number" placeholder="Phone Number" required />
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label  class="required">8. Email</label>
+        <div class="input-field-8-container">
+          <div class="input-icon">
+            <img src="images/email.png" width="35px" height="35px">
+          </div>
+          <div class="input-field">
+            <input name="email" type="email" id="email" placeholder="example@gmail.com" required />
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label  class="required">9. What is the Sector of your Business?</label>
+        <div class="input-field-9-container">
+          <div class="input-icon">
+            <img src="images/options.png" width="35px" height="35px">
+          </div>
+          <div class="input-field" >
+           <select name="sector" id="option" required >
+            <option value="0">Select the sector of your business</option>
+            <option value="Agriculture">Agriculture</option>
+            <option value="Health">Health</option>
+            <option value="Tourism and Hospitality">Tourism and Hospitality</option>
+            <option value="Education">Education</option>
+            <option value="Mining">Mining</option>
+            <option value="Transportation and Logistics">Transportation and Logistics</option>
+            <option value="Green and Circular Economy">Green and Circular Economy</option>
+            <option value="Manufacturing">Manufacturing</option>
+            <option value="Digital Technology">Digital Technology</option>
+            <option value="Other">Other</option>
+           </select>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label  class="required">10. If the Sector of your business is under other </label>
+        <div class="input-field-10-container">
+          <div class="input-field">
+            <input name="sector_des" type="text" id="other" placeholder="write it here" required />
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label  class="required">11. Describe the stage of your business</label>
+        <div class="input-field-11-container">
+          <div class="input-icon">
+            <img src="images/levels.png" width="35px" height="35px">
+          </div>
+          <div class="input-field" >
+           <select name="stage" id="stage" required >
+            <option value="0">Select the stage of your business</option>
+            <option value="Idea stage">Idea stage</option>
+            <option value="Minimum Viable Product(MVP) a simple product/service">Minimum Viable Product(MVP) a simple product/service</option>
+            <option value="Not more than two years in the market/business">Not more than two years in the market/business</option>
+            <option value="More than two years in the market">More than two years in the market</option>
+           </select>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label  class="required">12. Please describe your business in 50-100 words (e.g. My startup helps farmers sell their product directly to consumers, so they get a better price for their crops.....) </label>
+        <div class="input-field-12-container">
+          <div class="input-field">
+            <textarea name="business_des" id="business_describtion"cols="30" rows="5" required ></textarea>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label  class="required">13. Please describe your product/service in 50-100 words (What kind of service or product does your company provide to the market?)</label>
+        <div class="input-field-13-container">
+          <div class="input-field">
+            <textarea name="product_des" id="product_describtion" cols="30" rows="5" required></textarea>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label  class="required">14. What problem does your product/service solve?</label>
+        <div class="input-field-14-container">
+          <div class="input-field">
+            <textarea name="solution_des" id="solution_describtion" cols="30" rows="5" required ></textarea>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label  class="required">15. Who is your potential customer for your product / services?</label>
+        <div class="input-field-15-container">
+          <div class="input-field">
+            <textarea name="potential_customer" id="potential_customer" cols="30" rows="5" required></textarea>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label  class="required">16. Have you ever participated in any business support program?</label>
+        <div class="input-field-16-container">
+          <div class="input-field" >
+           <select name="participation" id="participation" required>
+            <option value="yes">yes</option>
+            <option value="No">No</option>
+           </select>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label>17. If your answer to the above question is "YES", kindly give us the name of the programs you participated in.</label>
+        <div class="input-field-17-container">
+          <div class="input-field">
+            <textarea name="participation_des" id="participation_describtion" cols="30" rows="5"></textarea>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label  class="required">18. Have you ever participated in any Mastercard Foundation partnered projects?</label>
+        <div class="input-field-18-container">
+          <div class="input-field" >
+           <select name="mastercard_participation" id="mastercard_participation" required>
+            <option value="yes">yes</option>
+            <option value="No">No</option>
+           </select>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label>19.  If your answer is "yes" for the above question, tell us about the program (Name of the program and a kind of support your received).</label>
+        <div class="input-field-19-container">
+          <div class="input-field">
+            <textarea name="mastercard_des" id="mastercard_describtion" cols="30" rows="5"></textarea>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label  class="required">20. What is your funding status?</label>
+        <div class="input-field-20-container">
+          <div class="input-field" >
+           <select name="status" id="funding_status" required >
+            <option value="0">Select  your funding status</option>
+            <option value="Bootstraped(I am the one funding from my own pocket)">Bootstraped(I am the one funding from my own pocket)</option>
+            <option value="Raised Friends/Family Money">Raised Friends/Family Money</option>
+            <option value="Raised Angel Investment/VC">Raised Angel Investment/VC</option>
+            <option value="Microfinance or Banking Institutions Other">Microfinance or Banking Institutions Other</option>
+            <option value="Grant/Award"> Grant/Award</option>
+            <option value="Other">Other</option>
+           </select>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label>21. If  your funding status is under other </label>
+        <div class="input-field-21-container">
+          <div class="input-field">
+          <textarea name="status_des" id="mastercard_describtion" cols="30" rows="5"></textarea>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label  class="required">22. What do you hope to gain most from this incubation program? Explain in 50-100 words.</label>
+        <div class="input-field-22-container">
+          <div class="input-field">
+            <textarea name="hope_des" id="hope"cols="30" rows="5" required></textarea>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label  class="required">23. [Yes/No] Have anyone of you or any of your founding team members been convicted of a criminal offense? If your answer is yes, please provide brief details.</label>
+        <div class="input-field-23-container">
+          <div class="input-field">
+            <textarea name="criminal_detail" id="criminal" cols="30" rows="5" required></textarea>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label  class="required">24. [Yes/No] Have you ever won a competition or award? If your answer is yes, Kindly share us the detail.</label>
+        <div class="input-field-24-container">
+          <div class="input-field">
+            <textarea name="competition" id="competition" cols="30" rows="5" required></textarea>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label  class="required">25.  Please share any other relevant information about your startup.</label>
+        <div class="input-field-25-container">
+          <div class="input-field">
+            <textarea name="more_information" id="information" cols="30" rows="5" required></textarea>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label  class="required">26. Do you have access to a computer and internet?</label>
+        <div class="input-field-26-container">
+          <div class="input-field" >
+           <select name="internet_access" id="internet"  required>
+            <option value="yes">yes</option>
+            <option value="No">No</option>
+           </select>
+          </div>
+        </div>
+      </div>
+  
+      <div class="container-row">
+        <label  class="required">27. Upload your image here</label>
+        <div class="input-field-26-container">
+          <div class="input-field" >
+            <input name="image"  type="file" accept="image/*" id="image" required>
+          </div>
+        </div>
+      </div>
+  
+      <button type="submit" name="submit" id="submit-btn" role="button">Submit</button>
+  
+    </form>
+  </div>
+
+
+
+
+<div class="footer">
+  <footer class="footer-distributed">
+    <div class="footer-left">
+      <a href="index.html"><img src="images" width="100px"></a>
+      <p class="footer-links">
+        <a href="index.html" class="link-1">HOME</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="index.html">SERVICES</a>
+        <a href="index.html">CONTACT US</a>
+      </p>
+      <p class="footer-company-name">Jigjiga University Innovation Incubation Center © 2024</p>
+    </div>
+    <div class="footer-center">
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p>Jigjiga University, <br> Jigjiga</p>
+      </div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+251 912 432 172</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="#">info@jju.edu.et</a></p>
+      </div>
+    </div>
+    <div class="footer-right">
+      <p class="footer-company-about">
+        <span>About the company</span>
+        Our Innovation Incubation Center is a dynamic hub that provides the perfect environment for aspiring entrepreneurs, inventors, and visionaries to transform their ideas into successful ventures.
+      </p>
+      <div class="footer-icons">
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#"><i class="fa-brands fa-telegram"></i></a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
