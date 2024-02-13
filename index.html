@@ -259,15 +259,18 @@
   AOS.init();
 </script>
 <script>
+   window.addEventListener('load', function() {
   var slides = Array.from(document.getElementsByClassName('slide'));
   var currentSlideIndex = 0;
-  
+
   function playNextSlide() {
     slides[currentSlideIndex].classList.remove('active');
     currentSlideIndex = (currentSlideIndex + 1) % slides.length;
     slides[currentSlideIndex].classList.add('active');
   }
-  
-  setInterval(playNextSlide, 8000); // Change to the next slide every 5 seconds (adjust the interval as needed)
+
+  playNextSlide(); // Show the first slide immediately
+  setInterval(playNextSlide, 8000); // Change to the next slide every 8 seconds (adjust the interval as needed)
+});
 </script>
 </html>
